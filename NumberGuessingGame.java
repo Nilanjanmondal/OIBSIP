@@ -6,9 +6,9 @@ public class NumberGuessingGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int totalRounds = 3;              // Set number of rounds
-        int maxAttemptsPerRound = 5;      // Max attempts per round
-        int totalScore = 0;               // Track score
+        int totalRounds = 3;             
+        int maxAttemptsPerRound = 5;    
+        int totalScore = 0;             
 
         System.out.println("🎮 Welcome to the Number Guessing Game!");
         System.out.println("You have " + maxAttemptsPerRound + " attempts per round to guess a number between 1 and 100.");
@@ -35,7 +35,6 @@ public class NumberGuessingGame {
                 } else {
                     System.out.println("🎉 Correct! You guessed it in " + attemptsUsed + " attempt(s).");
 
-                    // Score based on number of attempts
                     int roundScore = switch (attemptsUsed) {
                         case 1 -> 10;
                         case 2 -> 8;
